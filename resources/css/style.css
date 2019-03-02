@@ -50,6 +50,7 @@ nav span {
 
 .mission-section {
   display: flex;
+  flex-direction: column;
   background-image: url("../images/img-mission-background.jpg");
   margin-top: 69px;
   margin-right: auto;
@@ -60,9 +61,40 @@ nav span {
   align-items: center;
 }
 
-h2, h4 {
+.mission-section h2,
+.mission-section h4 {
   background-color: black;
   width: 1200px;
   margin: 0;
   padding: 10px;
+}
+
+/* Store Section (Tea of the Month) */
+
+.store-section {
+  width: 1000px;
+  margin: 69px auto;
+  /*display: flex;*/
+}
+
+
+.store-title h2,
+.store-title h4 {
+  width: 1000px;
+  margin: 0;
+  padding: 10px;
+}
+
+.store-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.steeping img {
+  height: 200px;
+  width: 300px;
+}
+
+div {
+  border: 1px solid white;
 }
