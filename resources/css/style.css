@@ -3,6 +3,10 @@
 
 /* Universal Styles */
 
+div {
+  border: 1px solid white;
+}
+
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
@@ -88,13 +92,44 @@ nav span {
 .store-gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  /*align-content: space-around;*/
 }
 
 .steeping img {
   height: 200px;
   width: 300px;
+  padding-bottom: 10px;
 }
 
-div {
-  border: 1px solid white;
+.steeping h4 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Locations Section */
+
+.locations-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/img-locations-background.jpg");
+  margin: 0 auto;
+  height: 500px;
+  width: 1200px;
+}
+
+.all-addresses {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.address {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
 }
