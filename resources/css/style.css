@@ -78,13 +78,12 @@ nav span {
 .store-section {
   width: 1000px;
   margin: 69px auto;
-  /*display: flex;*/
 }
 
 .store-title h2,
 .store-title h4 {
   width: 1000px;
-  margin: 0;
+  margin: 0 auto;
   padding: 10px;
 }
 
