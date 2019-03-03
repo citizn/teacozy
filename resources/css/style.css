@@ -3,9 +3,9 @@
 
 /* Universal Styles */
 
-div {
+/*div {
   border: 1px solid white;
-}
+}*/
 
 body {
   font-family: Helvetica, sans-serif;
@@ -81,7 +81,6 @@ nav span {
   /*display: flex;*/
 }
 
-
 .store-title h2,
 .store-title h4 {
   width: 1000px;
@@ -93,18 +92,41 @@ nav span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*align-content: space-around;*/
+  align-items: center;
 }
 
 .steeping img {
   height: 200px;
   width: 300px;
-  padding-bottom: 10px;
 }
 
 .steeping h4 {
   padding: 0;
   margin: 0;
+}
+
+.berryblitz {
+  margin-left: 0;
+  margin-right: 40px;
+  padding-left: 0;
+}
+
+.donuts {
+  margin-right: 0;
+  margin-left: 40px;
+}
+
+.myrtle {
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.bedford {
+  margin-top: 10px;
+}
+
+.steeping h4 {
+  margin-top: 10px;
 }
 
 /* Locations Section */
@@ -136,6 +158,9 @@ nav span {
 
 /* Contact Section */
 
+.contact {
+  height: 200px;
+}
 
 /* Footer Section */
 
