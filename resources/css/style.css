@@ -3,17 +3,24 @@
 
 /* Universal Styles */
 
-/*div {
-  border: 1px solid white;
-}*/
-
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
-  color: seashell;
-  background-color: black;
   opacity: 0.9;
   text-align: center;
+}
+
+body,
+header,
+.mission-section h2,
+.mission-section h4,
+.address {
+  background-color: black;
+}
+
+body,
+nav a {
+  color: seashell;
 }
 
 /* Header Section */
@@ -23,7 +30,6 @@ header {
   position: fixed;
   align-items: center;
   z-index: 1;
-  background-color: black;
   width: 100%;
   height: 69px;
   border-bottom: 1px solid seashell;
@@ -41,7 +47,6 @@ header nav {
 }
 
 nav a {
-  color: seashell;
   text-decoration: underline;
 }
 
@@ -56,35 +61,45 @@ nav span {
   display: flex;
   flex-direction: column;
   background-image: url("../images/img-mission-background.jpg");
-  margin-top: 69px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 69px auto 0 auto;
   height: 700px;
-  width: 1200px;
   justify-content: center;
   align-items: center;
 }
 
 .mission-section h2,
 .mission-section h4 {
-  background-color: black;
-  width: 1200px;
   margin: 0;
   padding: 10px;
+}
+
+.mission-section,
+.mission-section h2,
+.mission-section h4 {
+  width: 1200px;
 }
 
 /* Store Section (Tea of the Month) */
 
 .store-section {
-  width: 1000px;
+  height: 625px;
   margin: 69px auto;
+}
+
+.store-section,
+.store-title h2,
+.store-title h4 {
+  width: 1000px;
 }
 
 .store-title h2,
 .store-title h4 {
-  width: 1000px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.store-title h4 {
+  margin-bottom: 15px;
 }
 
 .store-gallery {
@@ -101,7 +116,7 @@ nav span {
 
 .steeping h4 {
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
 }
 
 .berryblitz {
@@ -113,19 +128,17 @@ nav span {
 .donuts {
   margin-right: 0;
   margin-left: 40px;
+  padding-right: 0;
 }
 
 .myrtle {
-  margin-right: 40px;
   margin-top: 10px;
+  margin-right: 20px;
 }
 
 .bedford {
   margin-top: 10px;
-}
-
-.steeping h4 {
-  margin-top: 10px;
+  margin-left: 20px;
 }
 
 /* Locations Section */
@@ -141,18 +154,32 @@ nav span {
   width: 1200px;
 }
 
+.locations-section h2 {
+  margin-bottom: 15px;
+}
+
 .all-addresses {
   display: flex;
-  width: 1200px;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  width: 1200px;
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 300px;
-  background-color: black;
+  height: 300px
   opacity: 1;
+}
+
+.downtown {
+  margin-right: 40px;
+}
+
+.oakdale {
+  margin-left: 40px;
 }
 
 /* Contact Section */
@@ -161,8 +188,13 @@ nav span {
   height: 200px;
 }
 
+.contact h2 {
+  margin-top: 10px;
+}
+
 /* Footer Section */
 
 footer {
   text-align: left;
+  padding-left: 20px;
 }
